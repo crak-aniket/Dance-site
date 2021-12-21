@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API project</title>
+</head>
+<body>
+    <div class="form">
+        <section>
+            <input type="text" id="one" >
+        </section>
+    
+        <div class="img1">
+            <img src="images(1).png" height="200" width="200" class="img">
+
+        </div>>
+        <button >Click Here</button>
+    </div>
+          
+
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+<script> 
+    $(document).ready(function(){
+            $('button').click(function(){
+
+                const name = $('#one').val();
+                 alert(name);
+                $('.img').attr('src',`https://joeschmoe.io/api/v1/${name}`);
+                
+                });
+
+
+            });
+    
+      
+  
+    // it doesnt get selected directly it needs ''.
+</script>
+</body>
+
+
+
+
+</html>
